@@ -73,9 +73,9 @@ const RestaurantMenu = () => {
           <div key={index} className="item">
             <div>
               <h3 className="itemName">{item.name}</h3>
-
               <h4 className="price">Rs. {item?.price / 100}</h4>
               <h3>{item.category}</h3>
+              <div>Item-no:{index+1}</div>
             </div>
             <div>
               <img

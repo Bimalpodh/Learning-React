@@ -39,9 +39,9 @@ const Body = () => {
   };
 
   // Conditional Rendering
-  return ListOfRestaurant.length === 0 ? (
+  return ListOfRestaurant.length === 0 ? 
     shimmer()
-  ) : (
+   : (
     <div className="body">
       <div className="filter">
         <div className="search">
@@ -59,17 +59,17 @@ const Body = () => {
                 res?.info?.name.toLowerCase().includes(searchText.toLowerCase())
               );
               setfilteredRestaurant(filteredList);
-            }}
-          >
-            Search
-          </button>
+            }
+            }>Search 
+          </button>   
+                
         </div>
 
         <button
           className="filter-btn"
           onClick={() => {
             const filteredList = ListOfRestaurant.filter(
-              (res) => res?.info?.avgRating >= 4.1
+              (res) => res?.info?.avgRating >= 4.4
             );
             setfilteredRestaurant(filteredList);
           }}

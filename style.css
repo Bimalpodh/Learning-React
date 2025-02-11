@@ -46,6 +46,8 @@
 /* Restaurant card style */
 
 .res-container {
+  margin-right: 10%;
+  margin-left: 10%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -98,10 +100,12 @@
 .shimmer-container {
   display: flex;
   flex-wrap: wrap;
+  margin-left: 20%;
+  margin-right: 20%;
 
   .shimmer-card {
-    width: 200px;
-    height: 300px;
+    width: 250px;
+    height: 380;
     margin: 4px;
     padding: 5px;
     background-color: #f1f1f1;
@@ -114,6 +118,13 @@
 
 .RestauItems {
   margin: 7%;
+
+  .restu {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+  }
+  
 }
 .itemContainer {
   margin: 7%;
@@ -134,18 +145,27 @@
     border-radius: 7%;
     box-shadow: 0px 0px 5px 2px rgb(168, 52, 52);
   }
+  .Add-btn{
+    border: none;
+    border-radius: 6px;
+    margin-left: 8%;
+    height: 40px;
+    width: 90px;
+    background-color: #ee9c30;
+    color: white;
+    font-size: 18;
+    text-align: center;
+    
+
+  }
   
 
 }
+/*  */
 
-
-.restu {
-  display: flex;
-  justify-content: space-between;
-  padding-left: 0;
+/* About Section style */
+.user-card{
+  margin-top:4%;
+  border:  1px solid #4c7274;
 }
-
-
-
-
 /*  */

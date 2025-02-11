@@ -53,9 +53,23 @@ There are Two Types of Export and import
     (Normal JS utility function)
     There are  two type of  most popular hook
     1. useState()- It is used to provide super powerful state varibale
-    2. useEffect()-
+    2. useEffect()-it  is used to handle the side effects such as fetching data from API call and updating DOM. This hook runs on every render but there is also a way of using a dependency array using which we can control the effect of rendering.
 # Routing
     There is Two types of roting.
     1. Serverside routing
     2. Clientside routing
 
+# Class Component Life Cycle
+    /*
+    - Parent Constructor
+    - Parent Render
+      - child(1) Constructor
+      - child(1) Render 
+    
+      - child(2) Constructor
+      - child(2) Render 
+    <DOM UPDATEd - IN SINGLE BATCH>
+      -child(1) ComponentDIdMOunt
+      -child(2) ComponentDIdMOunt
+    - Parent ComponentDidMount
+    */ 
