@@ -1,6 +1,7 @@
-import UserClass from "./UserClass";
+// import UserClass from "./UserClass";
 import User from "./User";
 import React from "react";
+import UserContext from "../utils/userContext";
 class About extends React.Component{
   constructor(props){
 
@@ -10,7 +11,7 @@ class About extends React.Component{
   }
 
   componentDidMount(){
-    console.log("parent component did mount");
+    // console.log("parent component did mount");
     
   }
 
@@ -21,8 +22,15 @@ class About extends React.Component{
       <div className="About-Container">
         <h1>About</h1>
         <h2>This is a Delicious website</h2>
+        <div>
+          LoggedIn:
+          <UserContext.Consumer>
+          {({loggedInUser})=>(<h1>{loggedInUser}</h1>)}
+        </UserContext.Consumer>
+        </div>
+        {/* <img src=""></img> */}
         <User/>
-        {/* <UserClass  name={"first"} location={"Kalahandi"}/> */}
+        <UserClass  name={"first"} location={"Kalahandi"}/>
       </div>
     );
   }

@@ -73,3 +73,29 @@ There are Two Types of Export and import
       -child(2) ComponentDIdMOunt
     - Parent ComponentDidMount
     */ 
+
+# Redux ToolKit
+    - Install @reduxjs/toolkit and react-redux
+    - Build Our store
+    - Connect our Store to aou app
+    - Slice(CartSlice)
+    - Dispatche(action)
+    - Selector
+
+
+# Types of testing (developer)
+    1- Unit Testing
+    2- Integration Testing
+    3- End to End Testing -(e2e testing)
+
+# Setting up Testing in our app
+    - Install React Testing Library
+    - installed jest
+    - installed Babel dependencies
+    - configure babel
+    - configure parcel config file to disable default babel         transpilation
+    - jest configuration
+    - jest -npx jest --init
+    - install @babel/preset-react - to make jsx work in test
+    - include @babel/preset-react inside my babel config  (babel.config.js)
+    - npm install -D @testing-library/jest-dom
